@@ -22,5 +22,5 @@
 ## master ブランチから gh-pagesブランチへ同期するために 
 プロジェクトフォルダ直下に ```.git/hooks/post-commit``` ファイルを作成し、下記のスクリプトを記述する。
 ```
-git push -f origin master:gh-pages
+git push -f origin main:gh-pages
 ```
