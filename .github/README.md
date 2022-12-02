@@ -24,3 +24,6 @@
 ```
 git push -f origin main:gh-pages
 ```
+
+* post-commitができるのか
+ https://ktrysmt.github.io/blog/setting-git-push-by-hook-post-commit/
