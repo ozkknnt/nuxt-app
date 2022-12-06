@@ -29,3 +29,9 @@ git push -f origin main:gh-pages
  https://ktrysmt.github.io/blog/setting-git-push-by-hook-post-commit/
 
 post-commit できるかテスト
+
+
+```
+git rebase origin/gh-page
+```
+を試す
