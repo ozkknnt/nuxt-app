@@ -11,8 +11,28 @@
     https://develop365.gitlab.io/nuxtjs-2.8.X-doc/ja/faq/github-pages/
   * GithubPageの使い方  
     https://qiita.com/Ancient_Scapes/items/fe18bae043e4d35f1e39
+  * master ブランチから　gh-pagesブランチへの同期　　
+    https://senooken.jp/post/2020/01/24/
 
 * 起動  
  npm run genarate を実行しないとBuildできない  
- npm rus start
- 
+ npm run start 
+
+
+## master ブランチから gh-pagesブランチへ同期するために 
+プロジェクトフォルダ直下に ```.git/hooks/post-commit``` ファイルを作成し、下記のスクリプトを記述する。
+```
+git push -f origin main:gh-pages
+```
+
+* post-commitができるのか
+ https://ktrysmt.github.io/blog/setting-git-push-by-hook-post-commit/
+
+post-commit できるかテスト
+したができなかった。
+
+
+```
+git rebase origin/gh-page
+```
+を試す
